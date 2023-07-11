@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: "url('../public/seafoodBowl.jpg')",
+        section: "url('../public/sectionImage.jpg')",
       },
       fontFamily: {
         roslindale: "Roslindale",

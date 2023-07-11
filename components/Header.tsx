@@ -13,6 +13,7 @@ import {
 import Link from "next/link";
 import { Button } from "./ui/Button";
 import { Dot } from "lucide-react";
+import SmallHeader from "./SmallHeader";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -63,7 +64,7 @@ const Header = () => {
       .addEventListener("change", (e) => setMatches(e.matches));
   }, []);
   if (matches) {
-    return <h1>test</h1>;
+    return <SmallHeader />;
   }
   return (
     <div className="fixed w-full text-white">
