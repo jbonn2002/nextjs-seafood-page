@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -53,6 +53,18 @@ const components: { title: string; href: string; description: string }[] = [
 ];
 
 const Header = () => {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(max-width: 768px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 768px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
+  if (matches) {
+    return <h1>test</h1>;
+  }
   return (
     <div className="fixed w-full text-white">
       <div className="flex justify-between">
