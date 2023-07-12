@@ -54,18 +54,18 @@ const components: { title: string; href: string; description: string }[] = [
 ];
 
 const Header = () => {
-  const [matches, setMatches] = useState(
-    window.matchMedia("(max-width: 768px)").matches
-  );
+  // const [matches, setMatches] = useState(
+  //   window.matchMedia("(max-width: 768px)").matches
+  // );
 
-  useEffect(() => {
-    window
-      .matchMedia("(max-width: 768px)")
-      .addEventListener("change", (e) => setMatches(e.matches));
-  }, []);
-  if (matches) {
-    return <SmallHeader />;
-  }
+  // useEffect(() => {
+  //   window
+  //     .matchMedia("(max-width: 768px)")
+  //     .addEventListener("change", (e) => setMatches(e.matches));
+  // }, []);
+  // if (matches) {
+  //   return <SmallHeader />;
+  // }
   return (
     <div className="fixed w-full text-white">
       <div className="flex justify-between">
