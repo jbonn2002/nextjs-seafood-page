@@ -70,7 +70,10 @@ const Header = () => {
     <div className="fixed w-full text-white">
       <div className="flex justify-between">
         <Link className="flex font-roslindale" href="/">
-          <Button className="font-thin" variant="ghost">
+          <Button
+            className="font-thin text-white decoration-transparent"
+            variant="link"
+          >
             <Dot size={48} className="text-gray-700" />
             NSUOMNAM
           </Button>

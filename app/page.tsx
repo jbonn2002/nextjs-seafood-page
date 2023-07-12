@@ -1,11 +1,14 @@
 import ImageSection from "@/components/ImageSection";
+import MapGoogle from "@/components/MapGoogle";
+import SectionFive from "@/components/SectionFive";
+import SectionFour from "@/components/SectionFour";
 import SectionOne from "@/components/SectionOne";
+import SectionThree from "@/components/SectionThree";
 import SectionTwo from "@/components/SectionTwo";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <main className="bg-hero bg-contain bg-no-repeat md:bg-cover text-white flex min-h-screen flex-col items-center justify-between p-24">
         <div className="">
           <h1 className="font-roslindale font-thin text-5xl md:text-9xl">
@@ -21,6 +24,10 @@ export default function Home() {
       <SectionOne />
       <ImageSection />
       <SectionTwo />
+      <SectionThree />
+      <SectionFour />
+      <SectionFive />
+      <MapGoogle />
     </div>
   );
 }
